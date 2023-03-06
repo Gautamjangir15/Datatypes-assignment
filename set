@@ -1,0 +1,15 @@
+def average(array):
+    # your code goes here
+    s=0
+    val=0
+    setname=set(array)
+    for i in setname:
+        s=s+i
+        val=val+1
+    return s/val
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
