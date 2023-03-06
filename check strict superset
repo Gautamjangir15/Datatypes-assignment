@@ -1,0 +1,7 @@
+set_A = set(map(int, input().split()))
+result = True
+for _ in range(int(input())):
+    if set_A.issuperset(set(map(int, input().split()))) is not True:
+        result = False
+        break
+print(result)
